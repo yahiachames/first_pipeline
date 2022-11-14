@@ -43,7 +43,7 @@ pipeline {
                 script {
                     nexusArtifactUploader artifacts: 
                     [[artifactId: 'achat', classifier: '', 
-                    file: 'target/achat.jar', type: 'jar']], credentialsId: 'nexus-auth',
+                    file: 'target/achat-1.0-SNAPSHOT.jar', type: 'jar']], credentialsId: 'nexus-auth',
                      groupId: 'tn.esprit.rh', nexusUrl: '127.0.0.1:8081', nexusVersion: 'nexus3',
                       protocol: 'http', repository: 'first_pipeline', version: '1.0'
                 }

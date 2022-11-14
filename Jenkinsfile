@@ -6,5 +6,10 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/yahiachames/first_pipeline'
             }
         }
+         stage('Unit Testing'){
+            steps{
+                sh "mvn test"
+            }
+        }
     }
 }
